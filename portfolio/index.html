@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Website Icon" type="jpg" href="logo youtube.jpg">
+    <title>Khushi Rani | PORTFOLIO</title>
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("B3DmcgVZ8Tz3aBPZT"); // Replace 'YOUR_USER_ID' with your actual EmailJS user ID
+        })();
+    </script>
+    <script src="submit.js" defer></script>
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <a href="#" class="logo"> <img src="image/logo.png"></a>
+
+        <div class="fa-solid fa-bars" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#platform">Platform</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <div class="fa-regular fa-moon" id="darkmode"></div>
+        </ul>
+    </header>
+    <!-- home section -->
+
+    <script>    window.addEventListener('load', function () {
+            document.querySelector('.home-img img').classList.add('active');
+        });
+    </script>
+    <style>
+        .slide-in {
+            animation: slideIn 1s ease forwards;
+            animation-delay: 0.3s;
+            /* Delay the animation to start after 0.5s */
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(100%);
+            }
+
+            to {
+                transform: translateY(0);
+            }
+        }
+    </style>
+  <br>
+    <section class="home" id="home">
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/khushi-88360129a/"><i class='fa-brands fa-linkedin'></i></a>
+                <br>
+                <br> 
+                <a href="https://github.com/student-geetauniversity/student-geetauniversity"><i
+                        class='fa-brands fa-github'></i>
+                        <br>
+                        <br> 
+                        <a href="https://leetcode.com/u/Khushi_Geeta_University/">
+                            &nbsp;&nbsp;&nbsp; <img src="image/leetcode_logo.png">
+                    </a>
+
+            </div>
+        </div>
+        <div class="home-img">
+            <img src="https://thumbs.dreamstime.com/b/businesswoman-cartoon-character-people-face-profiles-avatars-icons-close-up-image-smiling-woman-vector-flat-illustration-234310941.jpg"
+                alt="" class="slide-in">
+        </div>
+        <script>function toggleMenu() {
+                const menu = document.querySelector(".menu-links");
+                const icon = document.querySelector(".hamburger-icon");
+                menu.classList.toggle("open");
+                icon.classList.toggle("open");
+            }
+
+            const containerE1 = document.querySelector(".section__text__p2");
+
+            const careers = ["Frontend Developer", "React JS Developer", "Java Developer", "SQL Developer", "Freelancer"];
+
+            let careerIndex = 0
+
+            let characterIndex = 0;
+
+            updateText();
+            function updateText() {
+                characterIndex++
+                containerE1.innerHTML = ` <h2>${careers[careerIndex].slice(0, characterIndex)}</h2>`;
+
+                if (characterIndex == careers[careerIndex].length) {
+                    careerIndex++
+                    characterIndex = 0
+                }
+                setTimeout(updateText, 400)
+            }
+
+        </script>
+        <div class="home-text">
+            <span>Hello, I'm</span>
+            <h1 style="color: orange;">Khushi Rani</h1>
+            <p class="section__text__p2"></p>
+            <p>I specialize in designing web applications for both clients and companies. As a seasoned software
+                developer, I bring a deep understanding of data structures and algorithms to deliver optimal software
+                solutions. Contact me to elevate your website!</p><br>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+
+        <style>
+            .home-text {
+                opacity: 0;
+                /* Initially hide the element */
+                transform: translateX(-100%);
+                /* Move the element to the left */
+                animation: slideFromLeft 0.5s ease forwards;
+                /* Apply animation */
+            }
+
+            @keyframes slideFromLeft {
+                from {
+                    opacity: 0;
+                    transform: translateX(-100%);
+                }
+
+                to {
+                    opacity: 1;
+                    transform: translateX(0);
+                }
+            }
+        </style>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                // Wait for the DOM content to be loaded
+                var homeText = document.querySelector('.home-text');
+                homeText.classList.add('show'); // Add the 'show' class to trigger the transition
+            });
+
+        </script>
+    </section>
+
+
+
+
+    <!-- about section -->
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>About Me</h2>
+            <span>Introduction</span>
+        </div>
+        <!-- About Content -->
+        <div class="about-container">
+            <div class="about-img">
+                <img src="https://img.freepik.com/premium-vector/business-woman-avatar-illustration-simple-cartoon-user-portrait-business-leader_118339-4412.jpg"
+                    alt="about img">
+            </div>
+            <div class="about-text">
+                <p><span style="font-weight: bold;">As a web developer,</span><br> I am passionate about creating
+                    visually appealing and user-friendly websites. With expertise in <span
+                        style="font-weight: 500;">HTML, CSS, JavaScript, Bootstrap, and jQuery</span>, I strive to
+                    deliver high-quality and responsive designs that meet the needs of my clients. <br>
+                    I look forward to collaborating with you and bringing your web development projects to life. Feel
+                    free to explore my portfolio and get in touch with me to discuss your project requirements.
+                </p>
+
+                <a href="D:\New folder (2)\khushi certificates\resume.pdf" class="btn">Download
+                    Cv</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Skills -->
+    <section class="skills" id="skills">
+        <div class="heading">
+            <h2>Skills</h2>
+            <span>My Skills</span>
+        </div>
+        <!-- Skills Content -->
+        <div class="skills-container">
+            <div class="bars">
+                <!-- Box 1 -->
+                <div class="bars-box">
+                    <h3>HTML</h3>
+                    <span>96%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar html-bar"></div>
+                </div>
+                <!-- Box 2 -->
+                <div class="bars-box">
+                    <h3>C</h3>
+                    <span>90%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar css-bar"></div>
+                </div>
+                <!-- Box 3 -->
+                <div class="bars-box">
+                    <h3>C++</h3>
+                    <span>85%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar js-bar"></div>
+                </div>
+                <!-- Box 4 -->
+                <div class="bars-box">
+                    <h3>Javascript</h3>
+                    <span>70%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar react-bar"></div>
+                </div>
+                <div class="bars-box">
+                    <h3>CSS</h3>
+                    <span>75%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar git-bar"></div>
+                </div>
+            </div>
+            <div class="skills-img">
+                <img src="https://www.devstree.se/static/media/Frame%20(2).b2f1a0b2fa4a4c975061.png" alt="">
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Services -->
+    <section class="services" id="services">
+        <div class="heading">
+            <h2>Services</h2>
+            <span>Our Services</span>
+        </div>
+        <div class="services-content">
+            <!-- Box 1 -->
+            <div class="services-box">
+                <i class="fa-solid fa-server"></i>
+                <h3> Frontend Development</h3>
+                <a href="#">Learn More</a>
+            </div>
+            <!-- Box 2 -->
+            <div class="services-box">
+                <i class="fa-solid fa-server"></i>
+                <h3>Graphics Designing</h3>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects" id="projects">
+        <div class="heading">
+            <h2>Projects</h2>
+            <span>Our Recent Work</span>
+        </div>
+        <div class="projects-content">
+
+
+            <div class="projects-img">
+                <img src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3Jhd3BpeGVsX29mZmljZV85X2FfY2FsY3VsYXRvcl9wcm9kdWN0X3Bob3RvZ3JhcGh5X2lzb2xhdGVkX3doaV8yMmQxNzk1Yi02ZGQzLTQ4MGMtYTg4ZS01Nzc1NDU5NmZjZjctMDIuanBn.jpg"
+                    alt="">
+                </a>
+                <div class="button-container">
+                    <a style="text-decoration: none;color: white;"
+                        href="https://github.com/student-geetauniversity/Cognifyz-Projects/tree/main/level%201/task%202/calculator">
+                        <button class="project-button">
+                            Git</button>
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <button class="project-button">Live</button></a></a>
+                </div>
+                <CENter>
+                    <h1>Dynamic_Calculator</h1>
+                </CENter>
+            </div>
+
+            <div class="projects-img">
+                <img src="https://miro.medium.com/v2/resize:fit:883/1*Pn6xFoPeVqfLOO8xAIelUA.png" alt="">
+                <div class="button-container">
+                    <button class="project-button">Git</button></a>
+                    <a href="https://github.com/student-geetauniversity/Octanet-Project/tree/main/Octanet%20Task%201">
+                        <button class="project-button">Live</button></a>
+
+                </div>
+                <center>
+                    <h1>FitPro_Page</h1>
+                </center>
+            </div>
+
+            <div class="projects-img">
+
+                <img src="https://i.ytimg.com/vi/EmqIHSWxxyM/maxresdefault.jpg" alt="">
+                <div class="button-container">
+
+                    <button class="project-button">Git</button>
+                    <a href="https://github.com/student-geetauniversity/Cognifyz-Projects/tree/main/level%203/task%201"><button
+                            class="project-button">Live</button></a>
+
+                </div>
+                <center>
+                    <h1>Image_Gallery</h1>
+                </center>
+            </div>
+
+            <div class="projects-img">
+
+                <img src="https://img.freepik.com/free-photo/clock-cartoon-illustration_23-2151470860.jpg" alt="">
+                <div class="button-container">
+                    <button class="project-button">Git</button>
+                    <a href="https://github.com/student-geetauniversity/Experiments_of_Web_Development/tree/main/clock">
+                        <button class="project-button">Live</button></a>
+
+                </div>
+                <center>
+                    <h1>Dynamic_Clock</h1>
+                </center>
+            </div>
+
+
+            <div class="projects-img">
+                <img src=" https://img.freepik.com/free-photo/cartoon-woman-wearing-glasses_23-2151136873.jpg"
+                    alt=""></a>
+                <div class="button-container">
+                    <button class="project-button">Git</button>
+
+                    <a href="https://github.com/student-geetauniversity/Cognifyz-Projects/tree/main/level%201/task%201">
+                        <button class="project-button">Live</button></a>
+                </div>
+                <center>
+                    <h1>Cognifyz_Page</h1>
+                </center>
+            </div>
+        </div>
+    </section>
+
+    <section class="platform" id="platform">
+        <center>
+            <h1>Platforms</h1> 
+            <span style=" color: rgb(2, 166, 70);">LeetCode</span>
+        </center>
+        <br>
+        <img src="image/LeetCode_75.gif" width="40px"></img>
+        <img src="image/2024-50.gif" width="40px"></img>
+
+        <br>
+
+        <br>
+        <a href="https://leetcode.com/u/Khushi_Geeta_University/">
+            <img src="https://leetcard.jacoblin.cool/Khushi_Geeta_University?=dark&font=Goldman&ext=activityy"></img>
+            <a>
+                <br>
+
+                <!-- <h1>Git Hub</h1>
+                <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img
+                            src="https://github-profile-trophy.vercel.app/?username=ananth127" alt="ananth127" /></a>
+                </p> -->
+
+                <br>
+
+                <h3 align="left">Languages and Tools:</h3>
+                <br>
+                <p align="left"> <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img
+                            src="https://ncarb.github.io/bootstrap/assets/img/bootstrap-stack.png"
+                            alt="bootstrap" width="40" height="40"> </a>
+
+                    <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWErU0BdG4yFFRM-Yma5A5ScIOKvEurNe13A&s"
+                            alt="css3" width="40" height="40"> </a>
+
+                    <a href="https://www.w3schools.com/html/html_intro.asp" target="_blank" rel="noreferrer">
+                        <img src="https://static.vecteezy.com/system/resources/previews/001/416/705/non_2x/html5-emblem-orange-shield-and-white-text-vector.jpg"
+                            alt="html5" width="40" height="40"> </a>
+
+                    <a href="https://www.w3schools.com/c/" target="_blank" rel="noreferrer">
+                        <img src="https://www.shutterstock.com/image-vector/c-language-logo-simple-colours-600nw-2113921046.jpg"
+                            alt="C" width="40" height="40"> </a>
+
+                    <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR11YAOB84WBd8AVXVOjRUufF4HQ4vQoKcIAheTMvjOV1zb9wGbuSPxnt_y3svGtF8hb0k&usqp=CAU"
+                            alt="C++" width="40" height="40"> </a>
+
+                    <a href="https://www.w3schools.com/git/" target="_blank" rel="noreferrer"> <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/2048px-Git_icon.svg.png"
+                            alt="git" width="40" height="40"> </a>
+
+                    <a href="https://learning.postman.com/docs/introduction/overview/" target="_blank" rel="noreferrer">
+                        <img src="https://www.testautomatisierung.org/wp-content/uploads/postman-300x183.jpg"
+                            alt="postman" width="40" height="40"> </a>
+
+                    <a href="https://creativecloud.adobe.com/en-IN/learn/app/illustrator" target="_blank"
+                        rel="noreferrer"> <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFvlYpRb1pvPbLDFXiRSE9w8Jz_SqAZWT-SQ&s"
+                            alt="Adobe" width="40" height="40"> </a>
+
+                    <a href="https://creativecloud.adobe.com/en-IN/learn/app/photoshop" target="_blank"
+                        rel="noreferrer"> <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/1200px-Adobe_Photoshop_CC_icon.svg.png"
+                            alt="photoshop" width="40" height="40"> </a>
+                </p>
+                <br>
+                <p><img align="left"
+                        src="https://camo.githubusercontent.com/9ea46b35eede1c0117dd02f5c9ff4b4a9d9877b0437e336145b3a974dc10afa4/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170692f746f702d6c616e67733f757365726e616d653d73747564656e742d6765657461756e69766572736974792673686f775f69636f6e733d74727565266c6f63616c653d656e266c61796f75743d636f6d70616374"
+                        alt="khushi" /></p>
+
+                <p>&nbsp;<img align="center"
+                        src="https://camo.githubusercontent.com/4c95600fedd5a3bf9fc2331132774abe1b0562cc199f323e9cc95490455f1640/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170693f757365726e616d653d73747564656e742d6765657461756e69766572736974792673686f775f69636f6e733d74727565266c6f63616c653d656e"
+                        alt="khushi" /></p>
+
+                <p><img align="center"
+                        src="https://camo.githubusercontent.com/7a4e841b38ef0b2d212ed98dafbf2981270b3b740d344b1eeb87db15fc112b19/68747470733a2f2f6769746875622d726561646d652d73747265616b2d73746174732e6865726f6b756170702e636f6d2f3f757365723d73747564656e742d6765657461756e697665727369747926"
+                        alt="khushi" /></p>
+
+    </section>
+
+    <section class="Certification" id="Certification">
+        <div class="heading">
+            <h1>Certification</h1>
+        </div>
+        <div class="projects-content">
+
+
+            <div class="projects-img">
+                <img src="D:\New folder (2)\khushi certificates\professional certificates\data flair C Programming.png"
+                    alt="">
+
+            </div>
+            <div class="projects-img">
+                <img src="D:\New folder (2)\khushi certificates\professional certificates\simplilearn certificate.jpg"
+                    alt="">
+            </div>
+
+            <div class="projects-img" style="border:2px solid rgb(122, 8, 156);">
+                <img src="D:\New folder (2)\khushi certificates\hackathon.jpg" alt="">
+            </div>
+
+            <div class="projects-img">
+                <img src="D:\New folder (2)\khushi certificates\professional certificates\data flair wed development.png"
+                    alt="">
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="heading">
+            <h2>Contact</h2>
+            <span>Connect With Us</span>
+        </div>
+        <div class="contact-form">
+            <form id="reportForm">
+
+                <input type="text" id="name" name="name" placeholder="Your Name" required><br><br>
+
+                <input type="email" id="email" name="email" placeholder="Your Email" required><br><br>
+
+
+                <input type="tel" id="phoneno" name="phoneno" placeholder="Phone number" required><br><br>
+
+
+                <textarea id="message" name="message" placeholder="Write Message Here..." required></textarea><br><br>
+
+                <button type="submit" class="contact-button">
+                    <h1>Send</h1>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-social">
+            <a href="https://www.linkedin.com/in/khushi-88360129a/"><i class='fa-brands fa-linkedin'></i></a>
+            <a href="https://github.com/student-geetauniversity/student-geetauniversity"><i
+                    class='fa-brands fa-github'></i></a>
+
+        </div>
+
+    </div>
+    <!-- Copyright -->
+    <div class="copyright" style="background-color: rgb(29, 174, 140);">
+        <p>made with ❤️ in india
+            <br>
+             <a href="">Khushi_R</a> </p>
+    </div>
+    <script src="script.js"></script>
+
+
+    </script>
+</body>
+
+</html>
